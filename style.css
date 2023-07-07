@@ -36,6 +36,7 @@ body {
 
     /*background: color image repeat position/size */
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 
 }
 
@@ -175,4 +176,14 @@ footer {
     padding: 24px 0; 
     text-align: center;
 
+}
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(Fotos/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(Fotos/bg-desktop-light.jpg);
+    }
 }
