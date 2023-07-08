@@ -1,0 +1,129 @@
+* {
+margin: 0;
+padding: 0; 
+box-sizing: border-box;   
+}
+body {
+    background-image: url(fotos/pexels-eberhard-grossgasteiger-691668.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+body * {
+    font-family: 'Gloock', serif;
+    
+       
+}
+
+#container {
+    
+    width: 100%;
+    margin-top: 25px;
+    margin: 26px auto 0px;
+    
+    
+
+}
+
+
+.content {
+    height: 520px;
+    width: 935px;
+    border-radius: 30px;
+    overflow:hidden;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.navigation2 {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%, -285%);
+    display: flex
+}
+
+.bar {
+    margin-top: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    overflow: visible;
+}
+
+
+
+.bar:not(:last-child) {
+    margin-right: 15px;
+    
+}
+
+.bar:hover {
+    background-color: black;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+#profile {
+    text-align: center;
+    
+   
+
+}
+
+#profile img {
+    width: 460px;
+    
+    
+}
+
+#profile p {
+    font-weight: 800;
+    font-size: 50px;
+    margin-top: 80px;
+
+    
+}
