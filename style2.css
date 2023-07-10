@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-weight: 800;    
+    font-weight: 800;
+
 }
 
 :root {
@@ -29,8 +30,7 @@ body {
     background: var(--bg-url) no-repeat top center/cover;
     height: 100vh;;
     background: var(--bg2-url) no-repeat top center/cover;
-    backdrop-filter: blur(2px);
-    border: 1px solid red;
+    
 
 }
 
@@ -41,92 +41,100 @@ body * {
 }
 
 #container {
-    width: 360px;
-    margin: 56px auto 0px ;
-    padding: 0 24px;
-    border: 1px solid red;
+    
+    height: 95%;
+    width: 55%;
+    margin: 0% auto 0px ;
+    padding:1% 5%;
+    backdrop-filter: blur(2px);
 
 }
-    
+
+#container .content {
+    height: 60%;
+    width: 120%;
+    border-radius: 30px;
+    overflow:hidden;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#container .navigation2 {
+    position: absolute;
+    bottom: 1px;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    display: flex;
+
+}
+      
 
 #profile {
     text-align: center;
-    padding: 24px;
+    padding: 1%;
 }
 
 #profile img {
-    width: 112px;
-    border-radius: 150px;
-
-
+    width: 18%;
+    display: inline-block;
+    margin-block-end: 5%;
+    position: relative;
+    margin-top: -2%;
+    border-radius: 200%;
+    
 }
 
 #profile p {
     font-weight: 800;
-    line-height: 24px;
-    margin-top: 8px;
-    font-size: 25px;
-    
-    
+    width: 100%;
+    line-height: 100%;
+    font-size: 150%;
+    position: relative;
+       
 }
 
 #profile2 {
+    width: 50%;
+    height: 30%;
     text-align: center;
-    padding: -10px;
-    margin-top: -15%;
+    position: relative;
+    top: -6%;
+    left: 21%;
+
 }
 
 #profile2 img {
-    width: 190px;
-    
+    width: 112%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    top: -7%;
+      
 }
 
-#profile2 p {
-    font-weight: 800;
-    line-height: 24px;
-    margin-top: -25px;
-    font-size: 25px;
-    }
-
-    .content {
-        height: 310px;
-        width: 510px;
-        border-radius: 30px;
-        overflow:hidden;
-        position: absolute;
-        top: 59%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-    }
     
-    .navigation2 {
-        position: absolute;
-        bottom: 2px;
-        left: 50%;
-        transform: translate(-50%, -285%);
-        display: flex
-    }
-    
-    .bar {
-        margin-top: 20px;
-        border: 2px solid rgb(0, 0, 0);
-        padding: 5px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: .2s;
-        overflow: visible;
-    }
+.bar {
+    margin-top: 50%;
+    border: 1px solid rgb(227, 225, 233);
+    padding: 49%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    overflow: visible;
+}
     
     
     
     .bar:not(:last-child) {
-        margin-right: 15px;
+        margin-right: 40%;
         
     }
     
     .bar:hover {
-        background-color: black;
+        background-color: rgb(255, 255, 255);
     }
     
     input {
@@ -170,15 +178,97 @@ body * {
     }
 
 footer {
-    
-    padding: 24px 0; 
+    padding: 1% 0; 
     text-align: center;
+    
 
 }
 
-@media (min-width: 700px) {
+@media (max-width: 1000px) {
     :root {
         --bg-url: url(Fotos/pexels-eberhard-grossgasteiger-691668.jpg);
-        }
-
     }
+    #container {
+        height: 460px;
+        width: 360px;
+        margin: 56px auto 0px;
+        padding:10px 24px;
+        border: 1px solid red;
+        backdrop-filter: blur(2px);
+    
+    }
+    
+    #container .content {
+        height: 210px;
+        width: 360px;
+        border-radius: 30px;
+        overflow:hidden;
+        position: relative;
+        top: 1%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #profile {
+        text-align: center;
+        padding: 1%;
+    }
+    
+    #profile img {
+        width: 18%;
+        border-radius: 150px;
+        position: relative;
+        top: 0px;
+    
+    
+    }
+    
+    #profile p {
+        text-align:center;
+        font-weight: 800;
+        line-height: 24px;
+        margin-top: 8px;
+        font-size: 25px;
+        position: relative;
+        top: -19px;
+        
+    }
+    
+    #profile2 {
+        text-align: center;
+        
+    }
+    
+    #profile2 img {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -20%;
+        
+    }
+
+    #container .navigation2 {
+        position: absolute;
+        bottom: 1px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex
+}
+.bar {
+    margin-top: 8px;
+    border: 1px solid rgb(22, 6, 61);
+    padding: 4px;
+    position: relative;
+    right: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.bar:not(:last-child) {
+    margin-right: 10%;
+
+}
+
+}
