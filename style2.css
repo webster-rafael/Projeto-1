@@ -184,7 +184,7 @@ footer {
 
 }
 
-@media (max-width: 10006px) {
+@media (max-width: 1000px) {
     :root {
         --bg-url: url(Fotos/777.jpg);
     }
