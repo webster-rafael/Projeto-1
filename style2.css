@@ -184,23 +184,25 @@ footer {
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 15000px) {
     :root {
         --bg-url: url(Fotos/pexels-eberhard-grossgasteiger-691668.jpg);
     }
     #container {
         height: 460px;
         width: 360px;
-        margin: 56px auto 0px;
+        margin-top: 26px;
+        margin-left: auto;
+        margin-right: auto;
         padding:10px 24px;
-        border: 1px solid red;
         backdrop-filter: blur(2px);
+        border: 1px solid red;
     
     }
     
     #container .content {
         height: 210px;
-        width: 360px;
+        width: 340px;
         border-radius: 30px;
         overflow:hidden;
         position: relative;
