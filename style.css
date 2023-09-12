@@ -71,6 +71,12 @@ body * {
     
 }
 
+.project-h1{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 10px;
+}
+
 #switch {
     position: relative;
     width: 64px;
