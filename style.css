@@ -24,6 +24,7 @@
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(0, 0, 0, 0.1);
     --switch-bg-url: url(Fotos/sun.svg);
+    border: 1px solid black;
 }
 
 body {
@@ -36,7 +37,7 @@ body {
 
     /*background: color image repeat position/size */
     background: var(--bg-url) no-repeat top center/cover;
-    height: 100vh;
+    height: 100%;
 
 }
 
@@ -49,6 +50,8 @@ body * {
     width: 360px;
     margin: 56px auto 0px ;
     padding: 0 24px;
+    border: 1px solid white;
+    
 
 }
 
