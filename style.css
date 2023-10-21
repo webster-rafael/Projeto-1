@@ -82,6 +82,16 @@ body * {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size: 1.4em;
+    align-items: center;
+    margin: 3px 0 0 10px;
+}
+
+#saudacao {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1em;
     align-items: center;
     margin: 10px 0 0 10px;
 }
@@ -133,11 +143,9 @@ body * {
 
 ul {
     list-style: none;
-
     display: flex;
     flex-direction: column;
     gap: 16px;
-    
     padding: 24px 0;
     
 }
@@ -146,9 +154,7 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    
     padding: 16px 24px;
-    
     background: var(--surface-color);
     border: 1px solid var(--stroke-color);
     border-radius: 8px;
@@ -195,18 +201,6 @@ ul li a:hover {
 footer {
     padding: 24px 0; 
     text-align: center;
-    
-
-}
-
-@media (min-width: 700px) {
-    :root {
-        --bg-url: url(Fotos/bg-desktop.jpg);
-    }
-
-    .light {
-        --bg-url: url(Fotos/bg-desktop-light.jpg);
-    }
 }
 
 @keyframes slide-in {
