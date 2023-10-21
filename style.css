@@ -6,25 +6,28 @@
 
 :root {
     --text-color: white;
-    --bg-url: url(Fotos/bg-mobile.jpg);
+    --bg-url: #1b004b ;
     --stroke-color: rgba(255, 255, 255, 0.5); 
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(Fotos/moon-stars.svg);
+    
 
     
 }
 
 .light {
     --text-color: black;
-    --bg-url: url(Fotos/bg-mobile-light.jpg);
+    --bg-url: white;
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(0, 0, 0, 0.1);
     --switch-bg-url: url(Fotos/sun.svg);
-    border: 1px solid black;
+    
+    
+    
 }
 
 body {
@@ -36,13 +39,13 @@ body {
     */
 
     /*background: color image repeat position/size */
-    background: var(--bg-url) no-repeat top center/cover;
+    background: var(--bg-url);
     height: 100%;
 
 }
 
 body * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Sofia Sans Condensed', sans-serif;
     color: var(--text-color);
 }
 
@@ -50,7 +53,8 @@ body * {
     width: 360px;
     margin: 56px auto 0px ;
     padding: 0 24px;
-    border: 1px solid white;
+    border: 1px solid var(--text-color);
+    
     
 
 }
